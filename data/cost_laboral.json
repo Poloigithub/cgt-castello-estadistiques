@@ -1,0 +1,49 @@
+{
+  "comunitat_valenciana": {
+    "industria": {
+      "cost_total": 3298.32,
+      "cost_salarial": 2420.79,
+      "altres_costos": 877.53,
+      "var_trim_total": 166.66,
+      "var_anual_total": 71.93
+    },
+    "construccio": {
+      "cost_total": 3001.78,
+      "cost_salarial": 2138.36,
+      "altres_costos": 863.42,
+      "var_trim_total": 280.46,
+      "var_anual_total": 16.9
+    },
+    "serveis": {
+      "cost_total": 2916.55,
+      "cost_salarial": 2166.11,
+      "altres_costos": 750.44,
+      "var_trim_total": 123.74,
+      "var_anual_total": 54.25
+    }
+  },
+  "espanya": {
+    "industria": {
+      "cost_total": 3889.55,
+      "cost_salarial": 2880.28,
+      "altres_costos": 1009.27,
+      "var_trim_total": 293.77,
+      "var_anual_total": 108.87
+    },
+    "construccio": {
+      "cost_total": 3374.72,
+      "cost_salarial": 2404.86,
+      "altres_costos": 969.86,
+      "var_trim_total": 295.91,
+      "var_anual_total": 132.41
+    },
+    "serveis": {
+      "cost_total": 3298.67,
+      "cost_salarial": 2482.34,
+      "altres_costos": 816.33,
+      "var_trim_total": 265.01,
+      "var_anual_total": 127.05
+    }
+  },
+  "periode": "2025T4"
+}

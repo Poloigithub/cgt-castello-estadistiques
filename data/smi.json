@@ -1,0 +1,40 @@
+{
+  "serie": [
+    {
+      "any": 2021,
+      "dia": 31.66,
+      "mes": 950.0,
+      "any_total": 13300.0,
+      "var_pct": 0.0
+    },
+    {
+      "any": 2022,
+      "dia": 33.33,
+      "mes": 1000.0,
+      "any_total": 14000.0,
+      "var_pct": 5.3
+    },
+    {
+      "any": 2023,
+      "dia": 36.0,
+      "mes": 1080.0,
+      "any_total": 15120.0,
+      "var_pct": 8.0
+    },
+    {
+      "any": 2024,
+      "dia": 37.8,
+      "mes": 1134.0,
+      "any_total": 15876.0,
+      "var_pct": 5.0
+    },
+    {
+      "any": 2025,
+      "dia": 39.47,
+      "mes": 1184.0,
+      "any_total": 16576.0,
+      "var_pct": 4.4
+    }
+  ],
+  "_nota": "Actualitzat manualment. Font: BOE / Ministerio de Trabajo."
+}

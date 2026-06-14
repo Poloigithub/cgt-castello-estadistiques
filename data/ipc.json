@@ -1,0 +1,108 @@
+{
+  "serie_desembre_desembre": [
+    {
+      "any": 2001,
+      "variacio_anual": 2.7
+    },
+    {
+      "any": 2002,
+      "variacio_anual": 4.0
+    },
+    {
+      "any": 2003,
+      "variacio_anual": 2.6
+    },
+    {
+      "any": 2004,
+      "variacio_anual": 3.2
+    },
+    {
+      "any": 2005,
+      "variacio_anual": 3.7
+    },
+    {
+      "any": 2006,
+      "variacio_anual": 2.7
+    },
+    {
+      "any": 2007,
+      "variacio_anual": 4.2
+    },
+    {
+      "any": 2008,
+      "variacio_anual": 1.4
+    },
+    {
+      "any": 2009,
+      "variacio_anual": 0.8
+    },
+    {
+      "any": 2010,
+      "variacio_anual": 3.0
+    },
+    {
+      "any": 2011,
+      "variacio_anual": 2.4
+    },
+    {
+      "any": 2012,
+      "variacio_anual": 2.9
+    },
+    {
+      "any": 2013,
+      "variacio_anual": 0.3
+    },
+    {
+      "any": 2014,
+      "variacio_anual": -1.0
+    },
+    {
+      "any": 2015,
+      "variacio_anual": 0.0
+    },
+    {
+      "any": 2016,
+      "variacio_anual": 1.6
+    },
+    {
+      "any": 2017,
+      "variacio_anual": 1.1
+    },
+    {
+      "any": 2018,
+      "variacio_anual": 1.2
+    },
+    {
+      "any": 2019,
+      "variacio_anual": 0.8
+    },
+    {
+      "any": 2020,
+      "variacio_anual": -0.5
+    },
+    {
+      "any": 2021,
+      "variacio_anual": 6.5
+    },
+    {
+      "any": 2022,
+      "variacio_anual": 5.7
+    },
+    {
+      "any": 2023,
+      "variacio_anual": 3.1
+    },
+    {
+      "any": 2024,
+      "variacio_anual": 2.8
+    },
+    {
+      "any": 2025,
+      "variacio_anual": 2.9
+    }
+  ],
+  "ultim_mes": {
+    "periode": "2025-12",
+    "variacio_anual": 2.9
+  }
+}

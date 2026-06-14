@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resum estadístic · CGT Federació Intercomarcal de Castelló</title>
+<meta name="description" content="Indicadors socioeconòmics de Castelló i el País Valencià (EPA, IPC, demografia, empreses, cost laboral, salaris i SMI), actualitzats automàticament des de fonts oficials.">
+<style>
+  :root{
+    --blanc:#ffffff; --gris:#f5f5f5; --gris2:#ebebeb; --text:#1a1a1a;
+    --rojo:#cc0000; --rojo-fosc:#990000; --vora:#dcdcdc; --suau:#666;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; color:var(--text); background:var(--blanc);
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5; font-size:16px;
+  }
+  a{color:var(--rojo-fosc)}
+  header.top{background:var(--rojo); color:#fff; padding:1.4rem 1rem}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 1rem}
+  header.top .wrap{display:flex; align-items:center; gap:1rem; flex-wrap:wrap}
+  .logo{font-weight:800; font-size:1.5rem; letter-spacing:.5px; background:#fff; color:var(--rojo);
+    padding:.15rem .5rem; border-radius:4px}
+  header.top h1{font-size:1.15rem; margin:0; font-weight:600}
+  header.top p{margin:.2rem 0 0; opacity:.92; font-size:.9rem}
+  nav.toc{position:sticky; top:0; z-index:10; background:var(--text); padding:.4rem 0}
+  nav.toc .wrap{display:flex; gap:.4rem; overflow-x:auto; flex-wrap:wrap}
+  nav.toc a{color:#fff; text-decoration:none; font-size:.82rem; padding:.3rem .6rem;
+    border-radius:4px; white-space:nowrap}
+  nav.toc a:hover{background:rgba(255,255,255,.18)}
+  section{padding:2rem 0; border-bottom:1px solid var(--vora)}
+  section:nth-of-type(even){background:var(--gris)}
+  h2{color:var(--rojo); font-size:1.4rem; margin:0 0 .2rem}
+  .seccio-meta{font-size:.8rem; color:var(--suau); margin-bottom:1rem}
+  .seccio-meta strong{color:var(--text)}
+  .avis{background:#fff4f4; border:1px solid #f1b0b0; color:var(--rojo-fosc);
+    padding:.5rem .75rem; border-radius:6px; font-size:.85rem; margin:.5rem 0}
+  .avis.suau{background:#fafafa; border-color:var(--vora); color:var(--suau)}
+  .grid{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .kpi{background:#fff; border:1px solid var(--vora); border-radius:8px; padding:1rem}
+  section:nth-of-type(even) .kpi{background:#fff}
+  .kpi .xifra{font-size:2.1rem; font-weight:700; line-height:1.1; color:var(--text)}
+  .kpi .etiqueta{font-size:.82rem; color:var(--suau); margin-top:.25rem}
+  .kpi .var{font-size:.8rem; margin-top:.35rem}
+  .var.up{color:#0a7d2c}.var.down{color:var(--rojo)}
+  table{border-collapse:collapse; width:100%; font-size:.9rem; background:#fff; margin-top:.5rem}
+  caption{text-align:left; font-size:.85rem; color:var(--suau); padding:.3rem 0}
+  th,td{border:1px solid var(--vora); padding:.45rem .6rem; text-align:right}
+  th:first-child,td:first-child{text-align:left}
+  thead th{background:var(--text); color:#fff; font-weight:600}
+  tbody tr:nth-child(even){background:var(--gris)}
+  .num{font-variant-numeric:tabular-nums}
+  .chart-box{background:#fff; border:1px solid var(--vora); border-radius:8px; padding:1rem; margin-top:.5rem}
+  .chart-box canvas{max-width:100%}
+  h3{font-size:1.05rem; margin:1.4rem 0 .3rem}
+  footer{background:var(--text); color:#ddd; padding:2rem 1rem; font-size:.85rem}
+  footer a{color:#fff}
+  footer p{margin:.3rem 0}
+  .peu-nota{color:#999; font-size:.78rem; margin-top:1rem}
+  noscript .avis{display:block}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="logo">CGT</span>
+    <div>
+      <h1>Resum estadístic — Federació Intercomarcal de Castelló</h1>
+      <p>Indicadors socioeconòmics de Castelló i el País Valencià · fonts oficials (INE, GVA-ARGOS, BOE)</p>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#epa">EPA</a>
+    <a href="#comarques">EPA comarques</a>
+    <a href="#ipc">IPC</a>
+    <a href="#demografia">Demografia</a>
+    <a href="#empreses">Empreses</a>
+    <a href="#cost">Cost laboral</a>
+    <a href="#salaris">Salaris</a>
+    <a href="#smi">SMI</a>
+  </div>
+</nav>
+
+<noscript>
+  <div class="wrap" style="padding:1.5rem 1rem">
+    <div class="avis">Aquesta pàgina mostra les dades amb JavaScript. Pots consultar les dades en brut
+      als fitxers JSON: <a href="data/epa.json">EPA</a>, <a href="data/ipc.json">IPC</a>,
+      <a href="data/demografia.json">demografia</a>, <a href="data/empreses.json">empreses</a>,
+      <a href="data/cost_laboral.json">cost laboral</a>, <a href="data/salaris.json">salaris</a>,
+      <a href="data/smi.json">SMI</a> i <a href="data/metadata.json">metadades</a>.</div>
+  </div>
+</noscript>
+
+<main class="wrap" id="app">
+  <!-- EPA -->
+  <section id="epa">
+    <h2>EPA — Enquesta de Població Activa</h2>
+    <div class="seccio-meta" data-meta="epa"></div>
+    <div data-warn="epa"></div>
+    <h3>Comunitat Valenciana</h3>
+    <div class="grid" id="epa-cv"></div>
+    <h3>Província de Castelló per sexe</h3>
+    <div id="epa-castello"></div>
+    <h3>Ocupats per sector a Castelló (milers)</h3>
+    <div class="grid" id="epa-sector"></div>
+  </section>
+
+  <!-- EPA comarques -->
+  <section id="comarques">
+    <h2>EPA per comarques de Castelló</h2>
+    <div class="seccio-meta" data-meta="epa_comarques"></div>
+    <div data-warn="epa_comarques"></div>
+    <div id="comarques-taula"></div>
+  </section>
+
+  <!-- IPC -->
+  <section id="ipc">
+    <h2>IPC — Índex de Preus al Consum</h2>
+    <div class="seccio-meta" data-meta="ipc"></div>
+    <div data-warn="ipc"></div>
+    <div class="grid" id="ipc-kpi"></div>
+    <div class="chart-box"><canvas id="ipc-chart" height="120"></canvas><div id="ipc-fallback"></div></div>
+  </section>
+
+  <!-- Demografia -->
+  <section id="demografia">
+    <h2>Demografia — Castelló de la Plana</h2>
+    <div class="seccio-meta" data-meta="demografia"></div>
+    <div data-warn="demografia"></div>
+    <div class="grid" id="demo-kpi"></div>
+    <div id="demo-extra"></div>
+  </section>
+
+  <!-- Empreses -->
+  <section id="empreses">
+    <h2>DIRCE — Empreses</h2>
+    <div class="seccio-meta" data-meta="empreses"></div>
+    <div data-warn="empreses"></div>
+    <div class="grid" id="empreses-kpi"></div>
+    <div id="empreses-taula"></div>
+  </section>
+
+  <!-- Cost laboral -->
+  <section id="cost">
+    <h2>Cost laboral per treballador/a i mes</h2>
+    <div class="seccio-meta" data-meta="cost_laboral"></div>
+    <div data-warn="cost_laboral"></div>
+    <div id="cost-taula"></div>
+  </section>
+
+  <!-- Salaris -->
+  <section id="salaris">
+    <h2>Salaris — Enquesta d'Estructura Salarial</h2>
+    <div class="seccio-meta" data-meta="salaris"></div>
+    <div data-warn="salaris"></div>
+    <div class="grid" id="salaris-kpi"></div>
+    <div class="chart-box"><canvas id="salaris-chart" height="120"></canvas><div id="salaris-fallback"></div></div>
+    <div id="salaris-taula"></div>
+  </section>
+
+  <!-- SMI -->
+  <section id="smi">
+    <h2>SMI — Salari Mínim Interprofessional</h2>
+    <div class="seccio-meta" data-meta="smi"></div>
+    <div data-warn="smi"></div>
+    <div id="smi-taula"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Darrera execució del sistema d'actualització: <strong id="last-run">—</strong></p>
+    <p>Dades obtingudes automàticament de fonts oficials (INE, GVA-ARGOS, BOE).</p>
+    <p>CGT Federació Intercomarcal de Castelló · <a href="https://cgtcastello.org">cgtcastello.org</a></p>
+    <p class="peu-nota">Web generada automàticament. Les dades poden tenir un retard de fins a 7 dies
+      respecte de la publicació oficial.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<script>
+const NF = new Intl.NumberFormat('ca-ES', {maximumFractionDigits: 1});
+const NF0 = new Intl.NumberFormat('ca-ES', {maximumFractionDigits: 0});
+const EUR = new Intl.NumberFormat('ca-ES', {style:'currency', currency:'EUR', maximumFractionDigits: 2});
+
+const fmt  = v => (v==null || v==='' ) ? '—' : NF.format(v);
+const fmt0 = v => (v==null) ? '—' : NF0.format(v);
+const pct  = v => (v==null) ? '—' : NF.format(v) + ' %';
+const eur  = v => (v==null) ? '—' : EUR.format(v);
+
+function el(tag, cls, html){const e=document.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+function kpi(parent, xifra, etiqueta, varHtml){
+  const c = el('div','kpi');
+  c.appendChild(el('div','xifra', xifra));
+  c.appendChild(el('div','etiqueta', etiqueta));
+  if(varHtml) c.appendChild(el('div', null, varHtml));
+  parent.appendChild(c);
+}
+function varSpan(v, suffix, invertColor){
+  if(v==null) return '';
+  const up = invertColor ? v<0 : v>0;
+  const cls = v>0 ? (invertColor?'down':'up') : (v<0 ? (invertColor?'up':'down') : '');
+  const sign = v>0 ? '+' : '';
+  return `<span class="var ${cls}">${sign}${NF.format(v)}${suffix||''}</span>`;
+}
+async function getJSON(p){const r=await fetch(p,{cache:'no-store'}); if(!r.ok) throw new Error(p); return r.json();}
+function dateCa(iso){ if(!iso) return '—'; try{return new Date(iso).toLocaleString('ca-ES',{dateStyle:'long',timeStyle:'short'});}catch(e){return iso;} }
+
+function setMeta(meta, key, fontText){
+  const node = document.querySelector(`[data-meta="${key}"]`);
+  const ds = (meta.datasets||{})[key] || {};
+  if(node) node.innerHTML = `Darrera actualització de les dades: <strong>${dateCa(ds.last_updated)}</strong>`
+    + ` · Període: <strong>${ds.last_data_period || '—'}</strong>`
+    + ` · Font: ${fontText || ds.source || '—'}`;
+  const warn = document.querySelector(`[data-warn="${key}"]`);
+  if(warn){
+    const st = ds.status || '';
+    if(st && st!=='ok' && st!=='manual'){
+      warn.innerHTML = `<div class="avis">⚠ Aquesta secció pot mostrar dades antigues (estat: ${st}).</div>`;
+    } else if(st==='manual'){
+      warn.innerHTML = `<div class="avis suau">ℹ Dades de manteniment manual o estimacions; consulta el període de referència.</div>`;
+    }
+  }
+}
+
+(async function(){
+  let meta={};
+  try{ meta = await getJSON('data/metadata.json'); }catch(e){}
+  document.getElementById('last-run').textContent = dateCa(meta.last_run);
+
+  // ---------- EPA ----------
+  try{
+    const epa = await getJSON('data/epa.json');
+    setMeta(meta,'epa','INE');
+    const cv = epa.cv_resum||{};
+    const g = document.getElementById('epa-cv');
+    kpi(g, fmt(cv.ocupats_milers)+'<small> mil</small>', 'Ocupats', varSpan(cv.var_anual_ocupats,' mil (anual)'));
+    kpi(g, fmt(cv.desocupats_milers)+'<small> mil</small>', 'Desocupats');
+    kpi(g, pct(cv.taxa_activitat), 'Taxa d\'activitat');
+    kpi(g, pct(cv.taxa_desocupacio), 'Taxa de desocupació');
+
+    const c = epa.castello_provincia||{};
+    const rows = [['ambdos_sexes','Ambdós sexes'],['homes','Homes'],['dones','Dones']];
+    let t = '<table><thead><tr><th>Sexe</th><th>Pobl. 16+</th><th>Actius</th><th>Ocupats</th><th>Desocupats</th><th>T. activitat</th><th>T. ocupació</th><th>T. desocupació</th></tr></thead><tbody>';
+    for(const [k,lab] of rows){const x=c[k]||{}; t+=`<tr><td>${lab}</td><td class="num">${fmt(x.poblacio_16_mes)}</td><td class="num">${fmt(x.actives)}</td><td class="num">${fmt(x.ocupades)}</td><td class="num">${fmt(x.desocupades)}</td><td class="num">${pct(x.taxa_activitat)}</td><td class="num">${pct(x.taxa_ocupacio)}</td><td class="num">${pct(x.taxa_desocupacio)}</td></tr>`;}
+    t += '</tbody></table><caption>Valors absoluts en milers de persones. Font: INE (EPA).</caption>';
+    document.getElementById('epa-castello').innerHTML = t;
+
+    const s = epa.ocupats_sector_castello||{};
+    const gs = document.getElementById('epa-sector');
+    kpi(gs, fmt(s.agricultura), 'Agricultura');
+    kpi(gs, fmt(s.industria), 'Indústria');
+    kpi(gs, fmt(s.construccio), 'Construcció');
+    kpi(gs, fmt(s.serveis), 'Serveis');
+
+    // Comarques
+    setMeta(meta,'epa_comarques','GVA-ARGOS (PEGV)');
+    const com = epa.comarques||[];
+    let ct = '<table><thead><tr><th>Comarca</th><th>T. activitat</th><th>Δ trim.</th><th>Δ anual</th><th>T. ocupació</th><th>T. desocupació</th><th>Δ trim.</th><th>Δ anual</th></tr></thead><tbody>';
+    for(const x of com){
+      ct += `<tr><td>${x.nom}</td>`
+        + `<td class="num">${pct(x.taxa_activitat)}</td><td class="num">${varSpan(x.var_trim_activitat)||'—'}</td><td class="num">${varSpan(x.var_anual_activitat)||'—'}</td>`
+        + `<td class="num">${pct(x.taxa_ocupacio)}</td>`
+        + `<td class="num">${pct(x.taxa_desocupacio)}</td><td class="num">${varSpan(x.var_trim_desocupacio,'',true)||'—'}</td><td class="num">${varSpan(x.var_anual_desocupacio,'',true)||'—'}</td></tr>`;
+    }
+    ct += `</tbody></table><caption>Estimacions per àrees petites. Període: ${epa.comarques_periode||'—'}. Font: GVA-ARGOS (PEGV).</caption>`;
+    document.getElementById('comarques-taula').innerHTML = ct;
+  }catch(e){ console.error('EPA',e); }
+
+  // ---------- IPC ----------
+  try{
+    const ipc = await getJSON('data/ipc.json');
+    setMeta(meta,'ipc','INE');
+    const u = ipc.ultim_mes||{};
+    const g = document.getElementById('ipc-kpi');
+    kpi(g, pct(u.variacio_anual), 'Variació anual (últim mes: '+(u.periode||'—')+')');
+    const serie = ipc.serie_desembre_desembre||[];
+    if(serie.length){
+      const last=serie[serie.length-1];
+      kpi(g, pct(last.variacio_anual), 'Variació desembre–desembre '+last.any);
+    }
+    drawIPC(serie);
+  }catch(e){ console.error('IPC',e); }
+
+  // ---------- Demografia ----------
+  try{
+    const d = await getJSON('data/demografia.json');
+    setMeta(meta,'demografia','INE / GVA-ARGOS');
+    const p = (d.padro||{}); const m = p.municipi||{};
+    const g = document.getElementById('demo-kpi');
+    kpi(g, fmt0(m.poblacio), 'Població (Castelló de la Plana)', varSpan(m.variacio_anual_pct,' % anual'));
+    kpi(g, fmt0(m.densitat_hab_km2), 'Densitat (hab./km²)');
+    kpi(g, fmt0((p.provincia||{}).poblacio), 'Província de Castelló');
+    kpi(g, fmt0((p.comunitat||{}).poblacio), 'Comunitat Valenciana');
+    kpi(g, pct(p.pct_municipi_provincia), '% municipi / província');
+    kpi(g, pct(p.pct_provincia_comunitat), '% província / comunitat');
+    const pend = [];
+    if((d.cens||{})._pendent) pend.push('Cens '+((d.cens||{})._periode||''));
+    if((d.estudis||{})._pendent) pend.push('Nivell d\'estudis '+((d.estudis||{})._periode||''));
+    if((d.llars||{})._pendent) pend.push('Llars '+((d.llars||{})._periode||''));
+    if(pend.length) document.getElementById('demo-extra').innerHTML =
+      `<div class="avis suau">Indicadors de manteniment manual pendents de càrrega: ${pend.join(' · ')}.</div>`;
+  }catch(e){ console.error('demo',e); }
+
+  // ---------- Empreses ----------
+  try{
+    const e = await getJSON('data/empreses.json');
+    setMeta(meta,'empreses','INE-DIRCE');
+    const g = document.getElementById('empreses-kpi');
+    const se = e.sectors||{};
+    kpi(g, fmt0(e.total), 'Total empreses ('+(e.ambit||'')+')');
+    kpi(g, fmt0(se.industria), 'Indústria');
+    kpi(g, fmt0(se.construccio), 'Construcció');
+    kpi(g, fmt0(se.serveis), 'Serveis');
+    const sub = e.subsectors_serveis||{};
+    const labels = {comerc_transport_hostaleria:'Comerç, transport i hostaleria',informacio_comunicacions:'Informació i comunicacions',financeres_assegurances:'Finances i assegurances',immobiliaries:'Immobiliàries',professionals_administratives:'Professionals i administratives',educacio_sanitat_socials:'Educació, sanitat i serveis socials',oci_altres_serveis:'Oci i altres serveis'};
+    let t='<h3>Subsectors de serveis</h3><table><thead><tr><th>Subsector</th><th>Empreses</th></tr></thead><tbody>';
+    for(const k in labels){ t+=`<tr><td>${labels[k]}</td><td class="num">${fmt0(sub[k])}</td></tr>`; }
+    t+='</tbody></table><caption>Font: INE (DIRCE).</caption>';
+    document.getElementById('empreses-taula').innerHTML = t;
+  }catch(e){ console.error('empreses',e); }
+
+  // ---------- Cost laboral ----------
+  try{
+    const c = await getJSON('data/cost_laboral.json');
+    setMeta(meta,'cost_laboral','INE-ETCL');
+    const sect=[['industria','Indústria'],['construccio','Construcció'],['serveis','Serveis']];
+    function tbl(ambit, titol){
+      const a=c[ambit]||{};
+      let t=`<h3>${titol}</h3><table><thead><tr><th>Sector</th><th>Cost total</th><th>Cost salarial</th><th>Altres costos</th><th>Δ trim.</th><th>Δ anual</th></tr></thead><tbody>`;
+      for(const [k,lab] of sect){const x=a[k]||{};
+        t+=`<tr><td>${lab}</td><td class="num">${eur(x.cost_total)}</td><td class="num">${eur(x.cost_salarial)}</td><td class="num">${eur(x.altres_costos)}</td><td class="num">${varSpan(x.var_trim_total)||'—'}</td><td class="num">${varSpan(x.var_anual_total)||'—'}</td></tr>`;}
+      t+='</tbody></table>'; return t;
+    }
+    document.getElementById('cost-taula').innerHTML =
+      tbl('comunitat_valenciana','Comunitat Valenciana') + tbl('espanya','Espanya')
+      + '<caption>Cost laboral per treballador/a i mes (€). Font: INE (ETCL).</caption>';
+  }catch(e){ console.error('cost',e); }
+
+  // ---------- Salaris ----------
+  try{
+    const s = await getJSON('data/salaris.json');
+    setMeta(meta,'salaris','INE-EES');
+    const g=document.getElementById('salaris-kpi');
+    const ga=s.guany_anual_mitja||{};
+    function lastVal(ambit,sexe){const a=((ga[ambit]||{})[sexe])||[]; return a.length?a[a.length-1].valor:null;}
+    kpi(g, eur(lastVal('comunitat_valenciana','ambdos')), 'Guany anual mitjà — C. Valenciana ('+(s.ultim_any||'')+')');
+    kpi(g, eur(lastVal('espanya','ambdos')), 'Guany anual mitjà — Espanya');
+    kpi(g, pct(s.pct_cv_espanya_ambdos), '% C. Valenciana / Espanya');
+    // taula per sexe (últim any)
+    let t='<h3>Per sexe (últim any disponible)</h3><table><thead><tr><th>Àmbit</th><th>Ambdós</th><th>Homes</th><th>Dones</th></tr></thead><tbody>';
+    for(const [k,lab] of [['comunitat_valenciana','C. Valenciana'],['espanya','Espanya']]){
+      t+=`<tr><td>${lab}</td><td class="num">${eur(lastVal(k,'ambdos'))}</td><td class="num">${eur(lastVal(k,'homes'))}</td><td class="num">${eur(lastVal(k,'dones'))}</td></tr>`;
+    }
+    t+='</tbody></table><caption>Guany anual mitjà (Media). Font: INE (EES).</caption>';
+    document.getElementById('salaris-taula').innerHTML=t;
+    drawSalaris(ga);
+  }catch(e){ console.error('salaris',e); }
+
+  // ---------- SMI ----------
+  try{
+    const s = await getJSON('data/smi.json');
+    setMeta(meta,'smi','BOE / Ministeri de Treball');
+    let t='<table><thead><tr><th>Any</th><th>€/dia</th><th>€/mes</th><th>€/any</th><th>Variació</th></tr></thead><tbody>';
+    for(const r of (s.serie||[])){
+      t+=`<tr><td>${r.any}</td><td class="num">${eur(r.dia)}</td><td class="num">${eur(r.mes)}</td><td class="num">${eur(r.any_total)}</td><td class="num">${pct(r.var_pct)}</td></tr>`;
+    }
+    t+='</tbody></table><caption>14 pagues. Font: BOE / Ministeri de Treball.</caption>';
+    document.getElementById('smi-taula').innerHTML=t;
+  }catch(e){ console.error('smi',e); }
+})();
+
+function drawIPC(serie){
+  const fb=document.getElementById('ipc-fallback');
+  if(!serie || !serie.length){ fb.innerHTML='<p class="seccio-meta">Sense dades.</p>'; return; }
+  if(typeof Chart==='undefined'){ fb.innerHTML='<p class="seccio-meta">Gràfic no disponible (sèrie '+serie[0].any+'–'+serie[serie.length-1].any+').</p>'; return; }
+  new Chart(document.getElementById('ipc-chart'),{type:'bar',
+    data:{labels:serie.map(x=>x.any), datasets:[{label:'IPC variació anual desembre (%)', data:serie.map(x=>x.variacio_anual), backgroundColor:'#cc0000'}]},
+    options:{responsive:true, plugins:{legend:{display:true}}, scales:{y:{ticks:{callback:v=>v+' %'}}}}});
+}
+function drawSalaris(ga){
+  const fb=document.getElementById('salaris-fallback');
+  const cv=((ga.comunitat_valenciana||{}).ambdos)||[]; const esp=((ga.espanya||{}).ambdos)||[];
+  if(!cv.length && !esp.length){ fb.innerHTML='<p class="seccio-meta">Sense dades.</p>'; return; }
+  if(typeof Chart==='undefined'){ fb.innerHTML='<p class="seccio-meta">Gràfic no disponible.</p>'; return; }
+  const anys=[...new Set([...cv,...esp].map(x=>x.any))].sort();
+  const map=a=>{const m={};a.forEach(x=>m[x.any]=x.valor);return anys.map(y=>m[y]??null);};
+  new Chart(document.getElementById('salaris-chart'),{type:'line',
+    data:{labels:anys, datasets:[
+      {label:'C. Valenciana (€/any)', data:map(cv), borderColor:'#cc0000', backgroundColor:'#cc0000', tension:.2},
+      {label:'Espanya (€/any)', data:map(esp), borderColor:'#1a1a1a', backgroundColor:'#1a1a1a', tension:.2}
+    ]},
+    options:{responsive:true, scales:{y:{ticks:{callback:v=>NF0.format(v)+' €'}}}}});
+}
+</script>
+</body>
+</html>

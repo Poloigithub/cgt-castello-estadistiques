@@ -1,0 +1,19 @@
+{
+  "periode": "2025",
+  "ambit": "Castelló de la Plana (municipi)",
+  "total": 12710.0,
+  "sectors": {
+    "industria": 550.0,
+    "construccio": 1429.0,
+    "serveis": 10731
+  },
+  "subsectors_serveis": {
+    "comerc_transport_hostaleria": 4330.0,
+    "informacio_comunicacions": 319.0,
+    "financeres_assegurances": 310.0,
+    "immobiliaries": 848.0,
+    "professionals_administratives": 2391.0,
+    "educacio_sanitat_socials": 1136.0,
+    "oci_altres_serveis": 1397.0
+  }
+}

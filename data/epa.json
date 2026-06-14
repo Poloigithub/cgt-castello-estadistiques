@@ -1,0 +1,152 @@
+{
+  "cv_resum": {
+    "periode": "2026T1",
+    "ocupats_milers": 2461.7,
+    "desocupats_milers": 327.8,
+    "actius_milers": 2789.4,
+    "taxa_activitat": 58.9,
+    "taxa_desocupacio": 11.8,
+    "var_trim_ocupats": -8.8,
+    "var_anual_ocupats": 110.4
+  },
+  "castello_provincia": {
+    "periode": "2026T1",
+    "ambdos_sexes": {
+      "poblacio_16_mes": 547.0,
+      "actives": 323.0,
+      "ocupades": 283.6,
+      "desocupades": 39.4,
+      "inactives": 224.0,
+      "taxa_activitat": 59.05,
+      "taxa_ocupacio": 51.85,
+      "taxa_desocupacio": 12.19
+    },
+    "homes": {
+      "poblacio_16_mes": 270.4,
+      "actives": 175.7,
+      "ocupades": 157.0,
+      "desocupades": 18.7,
+      "inactives": 94.8,
+      "taxa_activitat": 64.96,
+      "taxa_ocupacio": 58.04,
+      "taxa_desocupacio": 10.66
+    },
+    "dones": {
+      "poblacio_16_mes": 276.5,
+      "actives": 147.3,
+      "ocupades": 126.7,
+      "desocupades": 20.6,
+      "inactives": 129.2,
+      "taxa_activitat": 53.26,
+      "taxa_ocupacio": 45.8,
+      "taxa_desocupacio": 14.01
+    }
+  },
+  "ocupats_sector_castello": {
+    "periode": "2026T1",
+    "total": 283.6,
+    "agricultura": 8.7,
+    "industria": 63.8,
+    "construccio": 24.6,
+    "serveis": 186.6
+  },
+  "comarques": [
+    {
+      "nom": "Els Ports",
+      "taxa_activitat": 74.31,
+      "var_trim_activitat": 1.27,
+      "var_anual_activitat": 0.67,
+      "taxa_ocupacio": 66.84,
+      "var_trim_ocupacio": -0.87,
+      "var_anual_ocupacio": 2.13,
+      "taxa_desocupacio": 10.06,
+      "var_trim_desocupacio": 2.75,
+      "var_anual_desocupacio": -2.08
+    },
+    {
+      "nom": "L'Alt Maestrat",
+      "taxa_activitat": 73.32,
+      "var_trim_activitat": -0.22,
+      "var_anual_activitat": 0.33,
+      "taxa_ocupacio": 66.41,
+      "var_trim_ocupacio": -1.73,
+      "var_anual_ocupacio": 1.26,
+      "taxa_desocupacio": 9.43,
+      "var_trim_desocupacio": 2.07,
+      "var_anual_desocupacio": -1.32
+    },
+    {
+      "nom": "El Baix Maestrat",
+      "taxa_activitat": 74.3,
+      "var_trim_activitat": 1.15,
+      "var_anual_activitat": 1.62,
+      "taxa_ocupacio": 64.9,
+      "var_trim_ocupacio": -1.11,
+      "var_anual_ocupacio": 1.6,
+      "taxa_desocupacio": 12.65,
+      "var_trim_desocupacio": 2.89,
+      "var_anual_desocupacio": -0.26
+    },
+    {
+      "nom": "L'Alcalatén",
+      "taxa_activitat": 74.41,
+      "var_trim_activitat": 0.69,
+      "var_anual_activitat": -2.4,
+      "taxa_ocupacio": 65.92,
+      "var_trim_ocupacio": -0.9,
+      "var_anual_ocupacio": 1.83,
+      "taxa_desocupacio": 11.41,
+      "var_trim_desocupacio": 2.05,
+      "var_anual_desocupacio": -5.15
+    },
+    {
+      "nom": "La Plana Alta",
+      "taxa_activitat": 75.41,
+      "var_trim_activitat": 0.83,
+      "var_anual_activitat": 0.16,
+      "taxa_ocupacio": 66.0,
+      "var_trim_ocupacio": -1.21,
+      "var_anual_ocupacio": 1.89,
+      "taxa_desocupacio": 12.48,
+      "var_trim_desocupacio": 2.59,
+      "var_anual_desocupacio": -2.32
+    },
+    {
+      "nom": "La Plana Baixa",
+      "taxa_activitat": 74.92,
+      "var_trim_activitat": 1.15,
+      "var_anual_activitat": -0.28,
+      "taxa_ocupacio": 65.91,
+      "var_trim_ocupacio": -0.72,
+      "var_anual_ocupacio": 2.83,
+      "taxa_desocupacio": 12.04,
+      "var_trim_desocupacio": 2.34,
+      "var_anual_desocupacio": -4.09
+    },
+    {
+      "nom": "L'Alt Millars",
+      "taxa_activitat": 75.1,
+      "var_trim_activitat": 0.96,
+      "var_anual_activitat": 0.48,
+      "taxa_ocupacio": 66.72,
+      "var_trim_ocupacio": -0.95,
+      "var_anual_ocupacio": 1.13,
+      "taxa_desocupacio": 11.17,
+      "var_trim_desocupacio": 2.44,
+      "var_anual_desocupacio": -0.95
+    },
+    {
+      "nom": "L'Alt Palància",
+      "taxa_activitat": 74.82,
+      "var_trim_activitat": 1.08,
+      "var_anual_activitat": 1.4,
+      "taxa_ocupacio": 66.0,
+      "var_trim_ocupacio": -1.03,
+      "var_anual_ocupacio": 2.2,
+      "taxa_desocupacio": 11.79,
+      "var_trim_desocupacio": 2.69,
+      "var_anual_desocupacio": -1.31
+    }
+  ],
+  "comarques_periode": "2026T1"
+}

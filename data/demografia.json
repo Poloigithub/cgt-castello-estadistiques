@@ -1,0 +1,36 @@
+{
+  "padro": {
+    "periode": "2025",
+    "municipi": {
+      "nom": "Castelló de la Plana",
+      "poblacio": 183711.0,
+      "variacio_anual": 3332.0,
+      "variacio_anual_pct": 1.85,
+      "densitat_hab_km2": 1688.8,
+      "superficie_km2": 108.78
+    },
+    "provincia": {
+      "nom": "Castelló",
+      "poblacio": 627173.0
+    },
+    "comunitat": {
+      "nom": "Comunitat Valenciana",
+      "poblacio": 5058138.0
+    },
+    "pct_municipi_provincia": 29.3,
+    "pct_provincia_comunitat": 12.4
+  },
+  "cens": {
+    "_periode": "2021",
+    "_font": "Cens 2021 (manual)",
+    "_pendent": true
+  },
+  "estudis": {
+    "_periode": "2022",
+    "_pendent": true
+  },
+  "llars": {
+    "_periode": "2021",
+    "_pendent": true
+  }
+}
