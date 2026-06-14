@@ -18,6 +18,7 @@ SMI_DADES = [
     {"any": 2023, "dia": 36.00, "mes": 1080.00, "any_total": 15120.00, "var_pct": 8.0},
     {"any": 2024, "dia": 37.80, "mes": 1134.00, "any_total": 15876.00, "var_pct": 5.0},
     {"any": 2025, "dia": 39.47, "mes": 1184.00, "any_total": 16576.00, "var_pct": 4.4},
+    {"any": 2026, "dia": 40.70, "mes": 1221.00, "any_total": 17094.00, "var_pct": 3.1},
 ]
 
 
