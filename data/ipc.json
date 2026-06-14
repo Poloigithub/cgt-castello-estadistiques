@@ -1,6 +1,162 @@
 {
   "serie_desembre_desembre": [
     {
+      "any": 1962,
+      "variacio_anual": 9.9
+    },
+    {
+      "any": 1963,
+      "variacio_anual": 5.5
+    },
+    {
+      "any": 1964,
+      "variacio_anual": 12.7
+    },
+    {
+      "any": 1965,
+      "variacio_anual": 9.4
+    },
+    {
+      "any": 1966,
+      "variacio_anual": 5.3
+    },
+    {
+      "any": 1967,
+      "variacio_anual": 6.6
+    },
+    {
+      "any": 1968,
+      "variacio_anual": 2.9
+    },
+    {
+      "any": 1969,
+      "variacio_anual": 3.4
+    },
+    {
+      "any": 1970,
+      "variacio_anual": 6.8
+    },
+    {
+      "any": 1971,
+      "variacio_anual": 9.6
+    },
+    {
+      "any": 1972,
+      "variacio_anual": 7.3
+    },
+    {
+      "any": 1973,
+      "variacio_anual": 14.2
+    },
+    {
+      "any": 1974,
+      "variacio_anual": 17.9
+    },
+    {
+      "any": 1975,
+      "variacio_anual": 14.1
+    },
+    {
+      "any": 1976,
+      "variacio_anual": 19.8
+    },
+    {
+      "any": 1977,
+      "variacio_anual": 26.4
+    },
+    {
+      "any": 1978,
+      "variacio_anual": 16.5
+    },
+    {
+      "any": 1979,
+      "variacio_anual": 15.6
+    },
+    {
+      "any": 1980,
+      "variacio_anual": 15.2
+    },
+    {
+      "any": 1981,
+      "variacio_anual": 14.4
+    },
+    {
+      "any": 1982,
+      "variacio_anual": 14.0
+    },
+    {
+      "any": 1983,
+      "variacio_anual": 12.2
+    },
+    {
+      "any": 1984,
+      "variacio_anual": 9.0
+    },
+    {
+      "any": 1985,
+      "variacio_anual": 8.2
+    },
+    {
+      "any": 1986,
+      "variacio_anual": 8.3
+    },
+    {
+      "any": 1987,
+      "variacio_anual": 4.6
+    },
+    {
+      "any": 1988,
+      "variacio_anual": 5.8
+    },
+    {
+      "any": 1989,
+      "variacio_anual": 6.9
+    },
+    {
+      "any": 1990,
+      "variacio_anual": 6.5
+    },
+    {
+      "any": 1991,
+      "variacio_anual": 5.5
+    },
+    {
+      "any": 1992,
+      "variacio_anual": 5.3
+    },
+    {
+      "any": 1993,
+      "variacio_anual": 4.9
+    },
+    {
+      "any": 1994,
+      "variacio_anual": 4.3
+    },
+    {
+      "any": 1995,
+      "variacio_anual": 4.3
+    },
+    {
+      "any": 1996,
+      "variacio_anual": 3.2
+    },
+    {
+      "any": 1997,
+      "variacio_anual": 2.0
+    },
+    {
+      "any": 1998,
+      "variacio_anual": 1.4
+    },
+    {
+      "any": 1999,
+      "variacio_anual": 2.9
+    },
+    {
+      "any": 2000,
+      "variacio_anual": 4.0
+    },
+    {
       "any": 2001,
       "variacio_anual": 2.7
     },
@@ -102,7 +258,7 @@
     }
   ],
   "ultim_mes": {
-    "periode": "2025-12",
-    "variacio_anual": 2.9
+    "periode": "2026-05",
+    "variacio_anual": 3.2
   }
 }
