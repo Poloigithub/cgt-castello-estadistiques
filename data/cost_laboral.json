@@ -1,49 +1,49 @@
 {
   "comunitat_valenciana": {
     "industria": {
-      "cost_total": 3298.32,
-      "cost_salarial": 2420.79,
-      "altres_costos": 877.53,
-      "var_trim_total": 166.66,
-      "var_anual_total": 71.93
+      "cost_total": 3243.73,
+      "cost_salarial": 2353.86,
+      "altres_costos": 889.87,
+      "var_trim_total": -54.59,
+      "var_anual_total": 144.76
     },
     "construccio": {
-      "cost_total": 3001.78,
-      "cost_salarial": 2138.36,
-      "altres_costos": 863.42,
-      "var_trim_total": 280.46,
-      "var_anual_total": 16.9
+      "cost_total": 2882.21,
+      "cost_salarial": 1956.18,
+      "altres_costos": 926.03,
+      "var_trim_total": -119.57,
+      "var_anual_total": 213.92
     },
     "serveis": {
-      "cost_total": 2916.55,
-      "cost_salarial": 2166.11,
-      "altres_costos": 750.44,
-      "var_trim_total": 123.74,
-      "var_anual_total": 54.25
+      "cost_total": 2877.19,
+      "cost_salarial": 2115.28,
+      "altres_costos": 761.91,
+      "var_trim_total": -39.36,
+      "var_anual_total": 98.34
     }
   },
   "espanya": {
     "industria": {
-      "cost_total": 3889.55,
-      "cost_salarial": 2880.28,
-      "altres_costos": 1009.27,
-      "var_trim_total": 293.77,
-      "var_anual_total": 108.87
+      "cost_total": 3779.65,
+      "cost_salarial": 2746.96,
+      "altres_costos": 1032.69,
+      "var_trim_total": -109.9,
+      "var_anual_total": 111.56
     },
     "construccio": {
-      "cost_total": 3374.72,
-      "cost_salarial": 2404.86,
-      "altres_costos": 969.86,
-      "var_trim_total": 295.91,
-      "var_anual_total": 132.41
+      "cost_total": 3209.66,
+      "cost_salarial": 2210.87,
+      "altres_costos": 998.79,
+      "var_trim_total": -165.06,
+      "var_anual_total": 206.6
     },
     "serveis": {
-      "cost_total": 3298.67,
-      "cost_salarial": 2482.34,
-      "altres_costos": 816.33,
-      "var_trim_total": 265.01,
-      "var_anual_total": 127.05
+      "cost_total": 3200.34,
+      "cost_salarial": 2361.97,
+      "altres_costos": 838.37,
+      "var_trim_total": -98.33,
+      "var_anual_total": 157.93
     }
   },
-  "periode": "2025T4"
+  "periode": "2026T1"
 }
