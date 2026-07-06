@@ -1,50 +1,50 @@
 {
-  "last_run": "2026-06-29T09:22:52.432035+00:00",
+  "last_run": "2026-07-06T08:55:30.361053+00:00",
   "datasets": {
     "epa": {
-      "last_updated": "2026-06-29T09:23:20.043437+00:00",
+      "last_updated": "2026-07-06T08:55:47.945283+00:00",
       "last_data_period": "2026T1",
       "source": "INE",
       "status": "ok"
     },
     "epa_comarques": {
-      "last_updated": "2026-06-29T09:23:27.636932+00:00",
+      "last_updated": "2026-07-06T08:59:59.628694+00:00",
       "last_data_period": "2026T1",
       "source": "GVA-ARGOS (PEGV)",
-      "status": "ok"
+      "status": "manual: cap pàgina IMTNS recent accessible"
     },
     "ipc": {
-      "last_updated": "2026-06-29T09:22:55.134034+00:00",
+      "last_updated": "2026-07-06T08:55:31.887794+00:00",
       "last_data_period": "2026-06",
       "source": "INE",
       "status": "ok"
     },
     "demografia": {
-      "last_updated": "2026-06-29T09:23:39.520346+00:00",
+      "last_updated": "2026-07-06T09:00:12.675415+00:00",
       "last_data_period": "2025",
       "source": "INE / GVA-ARGOS",
       "status": "ok"
     },
     "empreses": {
-      "last_updated": "2026-06-29T09:24:30.777996+00:00",
+      "last_updated": "2026-07-06T09:00:41.822675+00:00",
       "last_data_period": "2025",
       "source": "INE-DIRCE",
       "status": "ok"
     },
     "cost_laboral": {
-      "last_updated": "2026-06-29T09:23:33.945233+00:00",
+      "last_updated": "2026-07-06T09:00:04.561895+00:00",
       "last_data_period": "2026T1",
       "source": "INE-ETCL",
       "status": "ok"
     },
     "salaris": {
-      "last_updated": "2026-06-29T09:23:36.582192+00:00",
+      "last_updated": "2026-07-06T09:00:06.305875+00:00",
       "last_data_period": "2024",
       "source": "INE-EES",
       "status": "ok"
     },
     "smi": {
-      "last_updated": "2026-06-29T09:22:55.268853+00:00",
+      "last_updated": "2026-07-06T08:55:32.024275+00:00",
       "last_data_period": "2026",
       "source": "Ministerio de Trabajo / BOE",
       "status": "manual"
