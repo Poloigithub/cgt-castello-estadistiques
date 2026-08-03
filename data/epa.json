@@ -1,54 +1,54 @@
 {
   "cv_resum": {
-    "periode": "2026T1",
-    "ocupats_milers": 2461.7,
-    "desocupats_milers": 327.8,
-    "actius_milers": 2789.4,
+    "periode": "2026T2",
+    "ocupats_milers": 2495.8,
+    "desocupats_milers": 304.6,
+    "actius_milers": 2800.4,
     "taxa_activitat": 58.9,
-    "taxa_desocupacio": 11.8,
-    "var_trim_ocupats": -8.8,
-    "var_anual_ocupats": 110.4
+    "taxa_desocupacio": 10.9,
+    "var_trim_ocupats": 34.1,
+    "var_anual_ocupats": 82.2
   },
   "castello_provincia": {
-    "periode": "2026T1",
+    "periode": "2026T2",
     "ambdos_sexes": {
-      "poblacio_16_mes": 547.0,
-      "actives": 323.0,
-      "ocupades": 283.6,
-      "desocupades": 39.4,
-      "inactives": 224.0,
+      "poblacio_16_mes": 548.4,
+      "actives": 323.8,
+      "ocupades": 291.4,
+      "desocupades": 32.4,
+      "inactives": 224.5,
       "taxa_activitat": 59.05,
-      "taxa_ocupacio": 51.85,
-      "taxa_desocupacio": 12.19
+      "taxa_ocupacio": 53.14,
+      "taxa_desocupacio": 10.01
     },
     "homes": {
-      "poblacio_16_mes": 270.4,
-      "actives": 175.7,
-      "ocupades": 157.0,
-      "desocupades": 18.7,
-      "inactives": 94.8,
-      "taxa_activitat": 64.96,
-      "taxa_ocupacio": 58.04,
-      "taxa_desocupacio": 10.66
+      "poblacio_16_mes": 272.8,
+      "actives": 181.3,
+      "ocupades": 166.1,
+      "desocupades": 15.3,
+      "inactives": 91.4,
+      "taxa_activitat": 66.49,
+      "taxa_ocupacio": 60.89,
+      "taxa_desocupacio": 8.42
     },
     "dones": {
-      "poblacio_16_mes": 276.5,
-      "actives": 147.3,
-      "ocupades": 126.7,
-      "desocupades": 20.6,
-      "inactives": 129.2,
-      "taxa_activitat": 53.26,
-      "taxa_ocupacio": 45.8,
-      "taxa_desocupacio": 14.01
+      "poblacio_16_mes": 275.6,
+      "actives": 142.5,
+      "ocupades": 125.3,
+      "desocupades": 17.1,
+      "inactives": 133.1,
+      "taxa_activitat": 51.69,
+      "taxa_ocupacio": 45.47,
+      "taxa_desocupacio": 12.03
     }
   },
   "ocupats_sector_castello": {
-    "periode": "2026T1",
-    "total": 283.6,
-    "agricultura": 8.7,
-    "industria": 63.8,
-    "construccio": 24.6,
-    "serveis": 186.6
+    "periode": "2026T2",
+    "total": 291.4,
+    "agricultura": 8.1,
+    "industria": 73.0,
+    "construccio": 25.2,
+    "serveis": 185.2
   },
   "comarques": [
     {
