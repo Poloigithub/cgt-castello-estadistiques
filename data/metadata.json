@@ -1,50 +1,50 @@
 {
-  "last_run": "2026-09-28T11:21:15.974542+00:00",
+  "last_run": "2026-10-05T11:57:34.595072+00:00",
   "datasets": {
     "epa": {
-      "last_updated": "2026-09-28T11:21:43.688480+00:00",
+      "last_updated": "2026-10-05T11:57:48.429626+00:00",
       "last_data_period": "2026T2",
       "source": "INE",
       "status": "ok"
     },
     "epa_comarques": {
-      "last_updated": "2026-09-28T11:21:48.660953+00:00",
+      "last_updated": "2026-10-05T11:57:57.092672+00:00",
       "last_data_period": "2026T2",
       "source": "GVA-ARGOS (PEGV)",
       "status": "ok"
     },
     "ipc": {
-      "last_updated": "2026-09-28T11:21:18.974777+00:00",
-      "last_data_period": "2026-08",
+      "last_updated": "2026-10-05T11:57:36.819167+00:00",
+      "last_data_period": "2026-09",
       "source": "INE",
       "status": "ok"
     },
     "demografia": {
-      "last_updated": "2026-09-28T11:22:00.710871+00:00",
+      "last_updated": "2026-10-05T11:58:03.454851+00:00",
       "last_data_period": "2025",
       "source": "INE / GVA-ARGOS",
       "status": "ok"
     },
     "empreses": {
-      "last_updated": "2026-09-28T11:22:48.160682+00:00",
+      "last_updated": "2026-10-05T11:58:46.942593+00:00",
       "last_data_period": "2025",
       "source": "INE-DIRCE",
       "status": "ok"
     },
     "cost_laboral": {
-      "last_updated": "2026-09-28T11:21:54.949432+00:00",
+      "last_updated": "2026-10-05T11:57:59.075027+00:00",
       "last_data_period": "2026T2",
       "source": "INE-ETCL",
       "status": "ok"
     },
     "salaris": {
-      "last_updated": "2026-09-28T11:21:57.322501+00:00",
+      "last_updated": "2026-10-05T11:58:01.168450+00:00",
       "last_data_period": "2024",
       "source": "INE-EES",
       "status": "ok"
     },
     "smi": {
-      "last_updated": "2026-09-28T11:21:19.089672+00:00",
+      "last_updated": "2026-10-05T11:57:36.912720+00:00",
       "last_data_period": "2026",
       "source": "Ministerio de Trabajo / BOE",
       "status": "manual"
