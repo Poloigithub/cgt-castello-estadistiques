@@ -1,50 +1,50 @@
 {
-  "last_run": "2026-10-19T10:24:58.575275+00:00",
+  "last_run": "2026-10-26T10:40:17.205888+00:00",
   "datasets": {
     "epa": {
-      "last_updated": "2026-10-19T10:25:13.555240+00:00",
+      "last_updated": "2026-10-26T10:40:35.694069+00:00",
       "last_data_period": "2026T2",
       "source": "INE",
       "status": "ok"
     },
     "epa_comarques": {
-      "last_updated": "2026-10-19T10:25:19.631124+00:00",
+      "last_updated": "2026-10-26T10:40:40.991330+00:00",
       "last_data_period": "2026T2",
       "source": "GVA-ARGOS (PEGV)",
       "status": "ok"
     },
     "ipc": {
-      "last_updated": "2026-10-19T10:25:00.317345+00:00",
+      "last_updated": "2026-10-26T10:40:20.718460+00:00",
       "last_data_period": "2026-09",
       "source": "INE",
       "status": "ok"
     },
     "demografia": {
-      "last_updated": "2026-10-19T10:25:28.059781+00:00",
+      "last_updated": "2026-10-26T10:40:46.474416+00:00",
       "last_data_period": "2025",
       "source": "INE / GVA-ARGOS",
       "status": "ok"
     },
     "empreses": {
-      "last_updated": "2026-10-19T10:26:02.818420+00:00",
+      "last_updated": "2026-10-26T10:41:24.276587+00:00",
       "last_data_period": "?",
       "source": "INE-DIRCE",
       "status": "ok"
     },
     "cost_laboral": {
-      "last_updated": "2026-10-19T10:25:24.724650+00:00",
+      "last_updated": "2026-10-26T10:40:42.764863+00:00",
       "last_data_period": "2026T2",
       "source": "INE-ETCL",
       "status": "ok"
     },
     "salaris": {
-      "last_updated": "2026-10-19T10:25:26.127512+00:00",
+      "last_updated": "2026-10-26T10:40:44.316094+00:00",
       "last_data_period": "2024",
       "source": "INE-EES",
       "status": "ok"
     },
     "smi": {
-      "last_updated": "2026-10-19T10:25:00.454950+00:00",
+      "last_updated": "2026-10-26T10:40:20.856733+00:00",
       "last_data_period": "2026",
       "source": "Ministerio de Trabajo / BOE",
       "status": "manual"
